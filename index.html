@@ -779,7 +779,7 @@
 
         .contact-overlay {
             background: rgba(255, 255, 255, 0.96);
-            padding: 60px;
+            padding: clamp(20px, 5vw, 60px);
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
             max-width: 800px;
@@ -787,6 +787,7 @@
             text-align: center;
             position: relative;
             z-index: 2;
+            width: 95%;
         }
 
         .contact-info {
@@ -801,11 +802,12 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            font-size: 1.1rem;
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
             color: var(--text-dark);
             background: #f8f9fa;
             padding: 15px;
             border-radius: 10px;
+            flex-wrap: wrap;
         }
 
         .contact-item i {
@@ -814,7 +816,7 @@
         }
 
         .phone-big {
-            font-size: 3rem;
+            font-size: clamp(1.8rem, 8vw, 3.5rem);
             font-weight: 800;
             color: var(--primary-color);
             display: block;
@@ -994,11 +996,17 @@
             }
 
             .phone-big {
-                font-size: 2rem;
+                font-size: clamp(1.5rem, 10vw, 2.5rem);
             }
 
             .contact-overlay {
-                padding: 40px 20px;
+                padding: 30px 15px;
+                width: 100%;
+            }
+
+            .btn-whatsapp {
+                font-size: 1rem !important;
+                padding: 15px 25px !important;
             }
 
             .modal-content {
