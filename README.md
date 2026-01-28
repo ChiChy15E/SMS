@@ -2,53 +2,47 @@
 
 Esta es la landing page oficial de **Servicios Múltiples Sola (SMS)**, una empresa dedicada a brindar soluciones integrales de mantenimiento para el hogar en República Dominicana.
 
-## 🚀 Características
+## 🚀 Características y Mejoras Recientes
 
-- **Diseño Premium y Moderno:** Interfaz profesional con efectos de Glassmorphism y animaciones fluidas.
-- **Sección Hero Interactiva:** Fondo dinámico con zoom lento, elementos flotantes y textos animados.
-- **Gestión Dinámica de Servicios:** Los servicios se cargan desde un objeto JavaScript para facilitar su mantenimiento.
-- **Ventanas Modales:** Información detallada para cada servicio mediante modales modernos y responsivos.
-- **Totalmente Responsivo:** Adaptado para una visualización perfecta en dispositivos móviles, tablets y computadoras.
-- **Integración con WhatsApp:** Botones de acción directa para cotizaciones rápidas vía WhatsApp.
+- **Diseño Premium y Moderno:** Interfaz profesional con efectos de Glassmorphism, animaciones fluidas y una paleta de colores corporativa.
+- **Sección Hero Responsiva:** Optimizada con tipografía fluida (`clamp`) para asegurar que el título se mantenga en una sola línea en todos los dispositivos.
+- **Acrónimo "SMS" Destacado:** Sigla ampliada significativamente para mayor impacto visual.
+- **Gestión Dinámica de Servicios:** Los servicios se renderizan automáticamente mediante JavaScript, permitiendo una fácil actualización del catálogo.
+- **Redirección de WhatsApp Robusta:** Sistema de redirección mejorado en modales que utiliza controladores de eventos directos para una experiencia de usuario sin fallos en móviles y computadoras.
+- **Optimización para Dispositivos:** Totalmente responsivo para móviles, tablets y monitores de alta resolución.
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5:** Estructura semántica para mejor SEO.
-- **CSS3:** Estilos personalizados, animaciones Keyframes y Flexbox/Grid.
-- **Vanilla JavaScript:** Lógica para la renderización de servicios, manejo de modales y animaciones al scroll.
-- **Font Awesome:** Iconografía profesional.
-- **Google Fonts:** Tipografía premium (Montserrat y Roboto).
+- **HTML5:** Estructura semántica avanzada para SEO.
+- **CSS3:** Variables CSS, animaciones Keyframes, Flexbox y Grid Layout para una disposición impecable.
+- **Vanilla JavaScript:** Lógica de renderizado dinámico, manejo de modales, animaciones al scroll y gestión de redirecciones.
+- **Font Awesome:** Iconografía profesional integrada.
+- **Google Fonts:** Tipografías Montserrat y Roboto para un acabado premium.
 
 ## 📂 Estructura de Imágenes
 
-Para el correcto funcionamiento de la página, asegúrate de colocar las siguientes imágenes en la carpeta raíz con los nombres exactos:
+Para el correcto funcionamiento de la página, asegúrate de colocar las siguientes imágenes en la carpeta raíz:
 
-| Archivo | Descripción | Dimensión Recomendada |
-|---------|-------------|-----------------------|
-| `SMS.png` | Logo de la empresa | Logo transparente |
-| `hero.png` | Imagen de fondo principal | 1920x1080px |
-| `nosotros.png` | Imagen sección Nosotros | 800x600px |
-| `plomeria.png` | Servicio de Plomería | 1024x1024px |
-| `electricidad.png` | Servicio de Electricidad | 1024x1024px |
-| `pintura.png` | Servicio de Pintura | 1024x1024px |
-| `aire.png` | Servicio de Aire Acondicionado | 1024x1024px |
-| `cisterna.png` | Servicio de Limpieza | 1024x1024px |
-| `herreria.png` | Servicio de Herrería | 1024x1024px |
-| `pisos.png` | Servicio de Pisos | 1024x1024px |
-| `bombas.png` | Servicio de Bombas | 1024x1024px |
-| `seguridad.png` | Servicio de Cámaras | 1024x1024px |
-| `decoracion.png` | Servicio de Chirro/PVC | 1024x1024px |
+| Archivo | Descripción | Uso |
+|---------|-------------|-----|
+| `SMS.png` | Logo de la empresa | Encabezado y Pie de página |
+| `hero.png` | Imagen de fondo principal | Sección Inicio |
+| `nosotros.png` | Imagen corporativa | Sección Nosotros |
+| `plomeria.png` | Detalle Servicio | Modal de Plomería |
+| `electricidad.png` | Detalle Servicio | Modal de Electricidad |
+| `...` | ... | Resto de servicios |
 
-## 🔧 Instalación Local
+## 🔧 Instalación y Despliegue
 
 1. Clona o descarga este repositorio.
-2. Coloca las imágenes mencionadas anteriormente en la carpeta raíz.
-3. Abre el archivo `index.html` en cualquier navegador web moderno.
+2. Asegúrate de que todas las imágenes estén en el directorio raíz.
+3. Abre `index.html` en tu navegador o despliega en cualquier servidor de estáticos (GitHub Pages, Netlify, Vercel).
 
-## ✉️ Contacto
+## ✉️ contacto de Servicios Múltiples Sola
 
-- **Teléfono/WhatsApp:** 809-965-9502
+- **Teléfono/WhatsApp:** +1 829-810-5560
 - **Ubicación:** República Dominicana
 
 ---
-*Desarrollado para Servicios Múltiples Sola (SMS) - 2026*
+**Diseño y desarrollo por Jhonatan Sola Perez**  
+*© 2026 Servicios Múltiples Sola (SMS). Todos los derechos reservados.*

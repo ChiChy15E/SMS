@@ -373,7 +373,7 @@
 
 
         .hero h1 {
-            font-size: clamp(2rem, 5vw, 4.5rem);
+            font-size: clamp(1.4rem, 4.5vw, 3.8rem);
             margin-bottom: 5px;
             color: var(--white);
             line-height: 1.1;
@@ -383,7 +383,7 @@
         }
 
         .hero-sms {
-            font-size: 3rem;
+            font-size: clamp(3.5rem, 12vw, 8rem);
             font-weight: 800;
             color: var(--accent-color);
             margin-bottom: 20px;
@@ -973,7 +973,11 @@
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: clamp(1.1rem, 5.5vw, 1.8rem);
+            }
+
+            .hero-sms {
+                font-size: clamp(3rem, 15vw, 5rem);
             }
 
             .hero .subtitle {
@@ -1047,7 +1051,7 @@
                 <a href="#servicios" class="nav-link">Servicios</a>
                 <a href="#porque-elegirnos" class="nav-link">¿Por qué SMS?</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
-                <a href="https://wa.me/18099659502?text=Hola,%20quiero%20información%20y%20una%20cotización%20de%20sus%20servicios."
+                <a href="https://wa.me/18298105560?text=Hola,%20quiero%20información%20y%20una%20cotización%20de%20sus%20servicios."
                     target="_blank" class="btn btn-primary btn-nav">
                     <i class="fab fa-whatsapp"></i> Cotizar
                 </a>
@@ -1071,7 +1075,7 @@
             <p>Dejamos tu hogar funcionando perfectamente. Calidad garantizada, rapidez y precios justos en un solo
                 lugar.</p>
             <div class="cta-group">
-                <a href="https://wa.me/18099659502?text=Hola,%20quiero%20información%20y%20una%20cotización%20de%20sus%20servicios."
+                <a href="https://wa.me/18298105560?text=Hola,%20quiero%20información%20y%20una%20cotización%20de%20sus%20servicios."
                     target="_blank" class="btn btn-primary">
                     <i class="fab fa-whatsapp"></i> Cotizar Ahora
                 </a>
@@ -1132,7 +1136,7 @@
 
             <div class="text-center" style="margin-top: 60px;">
                 <p style="font-size: 1.2rem; margin-bottom: 25px;">¿No encuentras lo que buscas?</p>
-                <a href="https://wa.me/18099659502?text=Hola,%20tengo%20una%20consulta%20especial%20sobre%20un%20servicio..."
+                <a href="https://wa.me/18298105560?text=Hola,%20tengo%20una%20consulta%20especial%20sobre%20un%20servicio..."
                     target="_blank" class="btn btn-primary">
                     <i class="fas fa-comment-dots"></i> Pregúntanos Directamente
                 </a>
@@ -1187,8 +1191,8 @@
                         <span>Cobertura en Santo Domingo y alrededores</span>
                     </div>
 
-                    <a href="tel:18099659502" class="phone-big">
-                        809-965-9502
+                    <a href="tel:18298105560" class="phone-big">
+                        829-810-5560
                     </a>
 
                     <div class="contact-item">
@@ -1197,7 +1201,7 @@
                     </div>
                 </div>
 
-                <a href="https://wa.me/18099659502?text=Hola,%20quiero%20agendar%20una%20visita%20técnica."
+                <a href="https://wa.me/18298105560?text=Hola,%20quiero%20agendar%20una%20visita%20técnica."
                     target="_blank" class="btn btn-primary btn-whatsapp" style="padding: 18px 45px; font-size: 1.2rem;">
                     <i class="fab fa-whatsapp"></i> Agendar Servicio Ahora
                 </a>
@@ -1231,20 +1235,20 @@
                     <h4>Contacto</h4>
                     <ul>
                         <li><i class="fas fa-phone-alt"></i> 809-965-9502</li>
-                        <li><i class="fab fa-whatsapp"></i> 809-965-9502</li>
+                        <li><i class="fab fa-whatsapp"></i> 829-810-5560</li>
                         <li><i class="fas fa-map-pin"></i> República Dominicana</li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Servicios Múltiples Sola (SMS). Todos los derechos reservados.</p>
+                <p>&copy; 2026 Servicios Múltiples Sola (SMS). Diseño y desarrollo por Jhonatan Sola Perez</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/18099659502?text=Hola,%20necesito%20ayuda%20con%20un%20servicio." class="float-whatsapp"
+    <a href="https://wa.me/18298105560?text=Hola,%20necesito%20ayuda%20con%20un%20servicio." class="float-whatsapp"
         target="_blank" aria-label="Chat en WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -1259,7 +1263,8 @@
             <div class="modal-details">
                 <h3 id="modalTitle">Título del Servicio</h3>
                 <p id="modalDesc">Descripción detallada del servicio.</p>
-                <a href="#" id="modalBtn" target="_blank" class="btn btn-primary btn-whatsapp">
+                <a href="#" id="modalBtn" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp"
+                    onclick="handleModalWhatsApp(event)">
                     <i class="fab fa-whatsapp"></i> Cotizar este servicio
                 </a>
             </div>
@@ -1368,7 +1373,7 @@
                     <button class="btn btn-outline btn-sm" onclick="openModal(${service.id})">
                         Ver Detalles
                     </button>
-                    <a href="https://wa.me/18099659502?text=Hola,%20me%20interesa%20el%20servicio%20de%20${encodeURIComponent(service.title)}" target="_blank" class="btn btn-primary btn-sm">
+                    <a href="https://wa.me/18298105560?text=Hola,%20me%20interesa%20el%20servicio%20de%20${encodeURIComponent(service.title)}" target="_blank" class="btn btn-primary btn-sm">
                         Solicitar
                     </a>
                 </div>
@@ -1378,26 +1383,28 @@
 
         // Modal Logic
         const modal = document.getElementById('serviceModal');
-        const modalImg = document.getElementById('modalImg');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalDesc = document.getElementById('modalDesc');
-        const modalBtn = document.getElementById('modalBtn');
 
         function openModal(id) {
             const service = servicesData.find(s => s.id === id);
             if (service) {
-                modalImg.src = service.img;
-                modalTitle.textContent = service.title;
-                modalDesc.textContent = service.fullDesc;
-                modalBtn.href = `https://wa.me/18099659502?text=Hola,%20vi%20los%20detalles%20de%20*${encodeURIComponent(service.title)}*%20y%20quisiera%20una%20cotización.`;
+                document.getElementById('modalImg').src = service.img;
+                document.getElementById('modalTitle').textContent = service.title;
+                document.getElementById('modalDesc').textContent = service.fullDesc;
 
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden'; // Prevent scrolling
             }
         }
 
+        function handleModalWhatsApp(e) {
+            e.preventDefault();
+            const title = document.getElementById('modalTitle').textContent;
+            const text = encodeURIComponent(`Hola, vi los detalles de *${title}* y quisiera una cotización.`);
+            window.open(`https://wa.me/18298105560?text=${text}`, '_blank');
+        }
+
         function closeModal() {
-            modal.classList.remove('active');
+            document.getElementById('serviceModal').classList.remove('active');
             document.body.style.overflow = 'auto'; // Restore scrolling
         }
 
